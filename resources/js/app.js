@@ -10,6 +10,9 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import router from './router'
 
+// notifications
+import Notifications from '@kyvg/vue3-notification'
+
 // icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -29,5 +32,6 @@ const axiosInstance = axios.create({
 createApp(App)
 	.use(router)
 	.use(VueAxios, axios)
+	.use(Notifications)
 	.component('font-awesome-icon', FontAwesomeIcon)
 	.mount('#app');

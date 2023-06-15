@@ -28,3 +28,13 @@ body {
 .pointer {
 	cursor: pointer;
 }
+
+/* notification styling overide  */
+.vue-notification {
+	margin-right: 0 !important;
+}
+
+.notification-content {
+	font-size: 16px;
+	font-family: system-ui;
+}

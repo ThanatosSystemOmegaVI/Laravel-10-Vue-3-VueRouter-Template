@@ -17,6 +17,7 @@
 		</div>
 		<div class="col-12">
 			<router-view></router-view>
+			<notifications width="350"/>
 		</div>
 	</div>
 </template>

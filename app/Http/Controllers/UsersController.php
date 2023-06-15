@@ -23,7 +23,7 @@ class UsersController extends Controller
                 $_SESSION['email'] = $user['email'];
                 return response()->json([
                     'bool' => "true",
-                    'message' => "login succesful",
+                    'message' => "login successful",
                 ]);
             } else {
                 return response()->json([

@@ -45,9 +45,22 @@ export default {
 			this.axios.post("/loginuser", logindata)
 				.then(response => {
 					if (response['data']['bool'] == "true") {
+						this.$notify({
+							// title: "Important message",
+							text: response['data']['message'],
+							type: 'success',
+							duration: 3000,
+						});
 						location.href = "/";
+					}else{
+						this.$notify({
+							// title: "Important message",
+							text: response['data']['message'],
+							type: 'warn',
+							duration: 3000,
+						});
 					}
-				})
+				});
 		}
 	}
 }
