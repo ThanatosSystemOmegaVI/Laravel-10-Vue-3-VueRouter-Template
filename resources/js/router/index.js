@@ -12,6 +12,11 @@ export const routes = [
 		path: '/login',
 		component: () => import('@/components/login.vue')
 	},
+	{
+		name: '404',
+		path: "/:pathMatch(.*)*",
+		component: Home
+	}
 ];
 
 const router = createRouter({
